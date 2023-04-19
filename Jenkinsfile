@@ -9,7 +9,7 @@ pipeline {
             agent {
                 docker {
                     image 'node:erbium-alpine'
-                    arg '-u root:root'
+                    args '-u root:root'
                 }
             }
             steps {
@@ -20,7 +20,7 @@ pipeline {
             agent {
                 docker {
                     image 'roxsross12/node-chrome'
-                    arg '-u root:root'
+                    args '-u root:root'
                 }
             }
             steps {
@@ -31,7 +31,7 @@ pipeline {
             agent {
                 docker {
                     image 'node:erbium-alpine'
-                    arg '-u root:root'
+                    args '-u root:root'
                 }
             }
             steps {
